@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                        https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.bridgeflow</groupId>
+    <artifactId>bridgeflow</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>bridgeflow-core</module>
+        <module>bridgeflow-engine</module>
+        <module>bridgeflow-web</module>
+        <module>bridgeflow-example</module>
+        <module>bridgeflow-adapter</module>
+    </modules>
+
+    <properties>
+        <java.version>17</java.version>
+        <lombok.version>1.18.30</lombok.version>
+        <spring.boot.version>3.3.2</spring.boot.version>
+    </properties>
+
+    <!-- 管理模块依赖版本 -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.bridgeflow</groupId>
+                <artifactId>bridgeflow-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.bridgeflow</groupId>
+                <artifactId>bridgeflow-engine</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.bridgeflow</groupId>
+                <artifactId>bridgeflow-adapter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+
+</project>

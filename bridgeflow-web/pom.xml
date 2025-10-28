@@ -1,0 +1,30 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.bridgeflow</groupId>
+        <artifactId>bridgeflow</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>bridgeflow-web</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.bridgeflow</groupId>
+            <artifactId>bridgeflow-engine</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.bridgeflow</groupId>
+            <artifactId>bridgeflow-adapter</artifactId>
+        </dependency>
+
+        <!-- Web 支持 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- 可选：监控/接口文档 -->
+
+    </dependencies>
+</project>

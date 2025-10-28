@@ -1,0 +1,17 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.bridgeflow</groupId>
+        <artifactId>bridgeflow</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>bridgeflow-adapter</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.bridgeflow</groupId>
+            <artifactId>bridgeflow-engine</artifactId>
+        </dependency>
+    </dependencies>
+</project>
